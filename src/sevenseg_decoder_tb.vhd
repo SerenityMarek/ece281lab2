@@ -104,7 +104,7 @@ begin
 	   assert w_segs = "0100001" report "error on D" severity failure;
 	---check E
 	w_btn <= "1110"; wait for 10 ns;
-	   assert w_segs = "0110000" report "error on E" severity failure;
+	   assert w_segs = "0000110" report "error on E" severity failure;
 	---check F
 	w_btn <= "1111"; wait for 10 ns;
 	   assert w_segs = "0001110" report "error on F" severity failure;
